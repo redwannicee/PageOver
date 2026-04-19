@@ -1,0 +1,46 @@
+# PageOver — .gitignore
+
+# ── User data (never commit) ──────────────────────────────
+uploads/*
+!uploads/.gitkeep
+data/*
+!data/.gitkeep
+
+# ── Environment / secrets ────────────────────────────────
+.env
+.env.local
+.env.*.local
+config.local.php
+
+# ── System / editor files ────────────────────────────────
+.DS_Store
+Thumbs.db
+desktop.ini
+*.swp
+*.swo
+*~
+.idea/
+.vscode/
+*.sublime-project
+*.sublime-workspace
+
+# ── PHP / Composer ───────────────────────────────────────
+vendor/
+composer.lock
+
+# ── Node (if ever used) ──────────────────────────────────
+node_modules/
+npm-debug.log*
+
+# ── Python cache ─────────────────────────────────────────
+__pycache__/
+*.py[cod]
+*.pyo
+
+# ── Temp PDF files ───────────────────────────────────────
+/tmp/pageover_*.pdf
+/tmp/pageover_*.json
+
+# ── Logs ─────────────────────────────────────────────────
+*.log
+error_log
